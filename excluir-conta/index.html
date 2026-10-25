@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Excluir conta e dados — Bimboca</title>
+<meta name="description" content="Como excluir sua conta Bimboca e os dados associados a ela: pelo aplicativo, em dois toques, ou por solicitação na web. O que é apagado, o que é anonimizado e o que permanece.">
+<meta name="robots" content="index,follow">
+<link rel="icon" type="image/png" href="data:image/png;base64,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">
+<link rel="apple-touch-icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAQAElEQVR42u2cyW9d132Av3POnd78yMdJpGbJli07tuMxUxMkKBqnaJumKNoimzb/QTfdddFFV/0TuihaIOkuQIMsMi3atLbTOo6dWHIkW7IoiSIfyff4hvvene85pwtKrh3bieU4sYHeDyAIPBK8vL/vd35nuvcIf/leS8WHhqxCUAmoBFRUAioBFZWASkBFJaASUFEJqARUVAIqARWVgEpARSWgElBRCagEVFQCKgEVlYBKQEUloBJQUQmoBFRUAioBFZWASkBFJaASUPH/XIAQlYAPFa3NRz9Jfl0BQgjERyTVhBBIKQCLlIJWqwFYhOD25x/+//fmeBlr0Na8PwFCSISAUhfkRY42Gqx920V+mzdXliVJmlOUhsVul8996lFKDcZAluVv/N5vq/wJIZC3Y2GtpSxL8iKjLAsQ0Gl0WGwuvOvfcN65yQi01ay1llnubpCYhNKkhNGEMJpTFDlGa4RUCARSSqQUCAH2Te9cWms/0JvN0ownn3iIhYUWTV/y2PljtJoBTR/2xgnjMGV/f8DW1jae738g178jUwiwAPbwvqy1aG0x1mCtxVUK33NoNhZotxZpeHUCt44oYX+0w3g+Roi357t4t9dUrQVHSda76yy11vC8OihLUNPENudgOiaJQuZJRBKnFEVJXpSAQCmBEPKNknAnO6SUdy3mMAAWayUff+QcX/nsGe5bETSdgsAVOFKAUsS5ZXMs+e4LA579yVUGg32UlNj3kQiHmS0ptUbrEqzAGIvAIKXCdRWOcmi2aiy02tTrTTqdBWRQw7Eu3jxl72DKPDNEyYDhfEhh9Dtf65e9J2ytRQhL3QuQNGn4XTa6DbzVNXSvQ+BoZJriUJJnc6JoQhQnxFHCbBYTRxnGlhhtcD2PKI5BSFxHvadWYoylUff59FOPYU3Knz/ZYiMoGI5mzKcxk3FCqWFpuUG97nHsSAuaDb75QsyPryQ4SvPc8xdQSv5KCYcl9TDxSm0os4xut8Wp42cp7By/4VCUNVbXWnS6dYJagGMcZL3GiQWHy9fGvHjhACMNs1s30Tol1xmOp9BFQZzm71ganV+VCp7jsLSyjHYVRTpjM41xdqYs5mvMrEfYn/LwJ47ze58/x8uhpNg1mFoJNmc2yOi0NHkccusaSCfltVdfZjCYYzEo5aDUYUux9u0ylBLEaU4STfnLx33WyhEXXjrA5in3HHVY6AkWFnyEzbnZn/HstT3uvWeFr5wJoFB8+4UR1pp37eru1HBjLHlxO1EcxUK7zoOfPM+JUw+wdXPGxx4IKIQhET7WGkaTnGFomB3MUfE+Wa/kypUx6dxy+tQSu0ttCtWlVg9Iwxn9WzffdSzk/KqsyIqS0XjMysYGXnOVjnZY7dbI2zAZxUwDuHKxz+7mkFmuaHguixt1XN+h3ZK4CFYWWyS7Q/amDf7oT/6AeD7k8sUt9vb3OBjNSZLD7PA8541yJQQUpWZ5eZnPHs1oFQUvXp1yZtWh0wl43frMVZOzrYwLu/CJs4IHdMFzP9+nvx3wuyfaXLgm2N2tk2cxUqq3jj6EoNSGoigJai4njy5x6liP3uoR1k4dw2Yu//Ps66wfVRglmE9zxrOQyViTpAaTaNIkIykzXr+RoBQ0l5qkpYfMa8QmZjrYIpyOsL9kYCDey1EFxhiwlqBWJ/DaNBoLOE2feiMgzktm85ygXaemIQjnqMU6x48tETQlrQUHrwlmO+K5n07IM5+HPn4cr1XD1RFkY/q7fTZvDbi6uU+pS3zPxVpDs9Xh8dNtvvaQy944pY6mvupzSa3wqaDLdNLihneE5aMaP/4JN3Z2OZGW3BqkrK002Iws//yiYTqZkKTZWxMrK1joNnnswRPcc2KNzmKXUeoxmmhGWxN2bvRZPL3Aw6dblO2CJJaEYYHQlnBeQBhyMEhIGm0absk4TMjTmDiKEbakzCOSQqN+QfzdlaA72SIlFoEwOZ2aQ63m4kvBensB6bgIa7g6HKF9gdYFs4MJJ1oh04EmuiEoexsUY02v63HjIOH5H7zM4kKTeq/N0tFF7vvYUT79VMF0POBbP3iJK9d3CTxFo1nn/kXIMoNvEpYWJPs24EudLs1hytajj/JaWOA1TrOTLfDo8f8kvPYy964GbA7n9Ooux7o+UeRjk+T2sFqQFyXn713nL/7wSWaxy04Ily/MObhxk3w+p5SasulijOHKz3eY53N0ViCMxpGWrLQIKUnLGquNGp+8v8H3fzTAa/iIRpdpNGVnlCLfwyxLOY3e373X2Zw2kOY5jgUfybUbu4TzEZgUnWlMYtjtj5jPI65tFYxnguHUMtxPMFFO4AXYdpO04RNmMeH+mPHNXXb3Y2Lp0g2a/M4TJ3hts89gEKLLks+ddvGsJUvmXJ1keO1zPHG6hvOEAydT3KVVlpoDInUSUs2N1y9T0wV5Cd2Gx6W9hIs3p2ANSkq0MdQDn6/+8VPsj1yuDjUXf/I6g9dukJYxac3BW1+k1qrTc13mo4Qwd4lSxSSE3ZFm9yBnHJZYIZhOBly4dI1ZlBDnMf3xPvuzEaW1vJfZiHO34+KszNg62GZ7JFhqdcmzNrd2ZqSl5t6Ty5z91HHKsiDPDXtji3IURoIvBUmmaQcpD9/jk5Vt+gcxl67MsP09hgs1ZqnhflPj9PEVjHE4fWKZlj/CEZrY1knSiPvWZpSOwLTv59Xd89zcbbF87jpnVp7jcpyz3vS42Z+x2AgwUrHRa/H4I6vs7e0xOAhxPY9ut82VvmQaQ65LmsrFWQpIam067RbSWmSUQS3j4YeWKHSJNZY0zZlnBmuhXpMMh1Nu7WW02keIognbg1vEmUbJ977Cc9cCBAJHOlgsszTCdWq0gzodHDydIdJ9sD6LTYcw9ZgkCs9XlEFAPMtgcx83lFhhEcJhvdmhd3yVwCbkYcw1Kchz2FhdJI0L5olmoe2y1DTspfBq3+e4chA1S90b0GnH3CMzhChw1BVemBpO9zx8a9EGpvMMTI31tSWmYYzjeEgh6U9AzuccaWbstHos1lbIsxnGKFxlSVDc3B2SZgckqaZVE/jCkhcGz3OZxRJpHIy19Pf7zKIQbSWOurt5h/N+ZocWQ7dRp1nroZTDXOcEbkDSOIloBQz3p9i4QOc5rigRWpBGMZ6C80+eYulYnRee2eFgN6XTcQnnMzIfEuuifBen3eOnz/43aZJz3l1gte6wM0yICwOOJN4VRNu3eOTcjHvNkG54Csw+nTmk2jCd5XSbNaxx2Nzu89OtbaQn6bSb9HpdTp07yzRvEds5O7OCVKfYWU40jSl0zuefPkHg+fzwhYLrwwTflUwnOUlW4joOKJenHjjKje0JUhyw1FlmubNKkk3ZPtghL99b+bmrPuAX20GhDdoYPOUTOHXyOCOjRIqUwd4OeTEDUVBoGBwkiHiGv+Dz2fOSE8uKnUwy708oTJMyLxDaoNwA4TaoddfZOHWS2XgARcTZpRaesphS0J/sMxA9lqI5B9M6wwshK224NenzrZcmtOdjWr6HFzTZnZb81+Yc6/vU6zU63UXuf+QzFKpHPk5w8widxITDIY3OIslsircccKSnOOKnvLJvMJMZ8TSkVpc0AkVephRZSDzqMx6NMFaSZAmDcMBBOKLUhrtZiRLv98QsCxijsbc7NyEELd+n21zFCxYwRrK81sI2XK7e2CK6vkXdc1BeGw9FrhysV6PhN7jv3AJRWhL2c0oLqQWEZDa7zGBnky+d6/L58z3CeczuzFLUFWvdLrOJoENMa2OV8WSHQZhzpq7oND1S7fGdnw/40bbGCOi0W9SDNo36GYQSaB1TTiNqS226603ygxm3tseUpUVPRmhlMWSk0RRneYMH7zvJg0sNnvtZH21K8nzGZL7LJEmxViDgbXON36iAN4+p79Q8KQWO8vC9Bo7wyLIYbTKk1LQbS7jeInFhMAJKk2DIaZU1vvSFZcax4Pkf7dM7qljsuCQR/PilSzz9xY/T1HNuvvIqa4sNorhgnpbkytBeP4qnFDeub3K63aLpgitzOp0eO9OE714cENTreO0urqco8wAhFnBrHu22YbYzobfY5J5zi1y7tMXV/gwaDRQeUigagcSRMZPRgHA2QykPR3loW1DoHHN7UU4gsLy/ML7PEvRua0dQ6pI0i4izkNJkFKakGdRo1nvkgCYmS/cool3WG0t0mid55dIB165cZjYb8tdf+wxPP/04Z86s8NgjpzgYjslxuLp9wPqxNcaZYfXYGtdvDujd+wiP//6XuX7pMsNJwjTNCE4+yNVBxL+/eJWVjQ2On7uP/b09uouLdHst+psXqVnFYv0YR1YWuX71eV69NED6x1noNImmm4TzAVIZfEfiSQflQJjMyMqSXKeUpuCDWuh1+IA5XNRyELfLlATG8zkHs0tIQB6uAlELAjIJ4ewSs3SI7xgyYcnSGYPXXmU8jam3OnQ8Tase8NW/+TKZlZxebbK5n/KnX3yAf/j2dWY24BN/9ldsvXaZIss58fhTrKYJcf17PPX000gkuB7LS10e/sLTvPjMM3z/X79OZMZ0uiuYRpsw2cPOL9GRPWqez2Q2JRzvEo76h1mOwHUclBBYPti9hg+0BbzrTFoIlHIQQiGkwvNcyjJnMt0nyyOU62CsIIozHt3wMUXGxWsHHJERaZxQJhF5GPL3//QM5zqWv/3H/+DBHlwaedy4vscP/+2brJy6DxW0+c43vs54NGPj7Dlev3yV733jXzDagBOwfe06RnjsbF4hKwrGoz5pEuMHPkkcMZkOCZMEqVyEUEilULe/flP8VgS80zIzCFzHRTkuvufhOpLcWJoUBNmcfB7xyq0Jt3ZDhqM508mc6+Mcr0h4fZgj4zmXd+Z4jk+7u8iViz/j5pVXWT9+lmw+58Lzz4CWrB8/Q5ZGlLkln4WMtm+RRCFBEOB63mEHKuThd+m8r47016oYH+a5oY16DWsNeVGitUZry0KnQTNwEQJyK7HGgrDkWYmUglJrHEfRqPmkWYEuC5TrUeQ5UkiElGitKUtNLfAQUmGMJs0KPNdlHkXk5eFQUSmJoxTSUaRJ9oHu4H1ofcDdECfpG6utUkpKozm20uHssSWmUYoQsLTQoj8MsVrTatXY3ptS8x1c16XuOTiOIM1KwKKUS5wV1FzFcBrRqPsoJWnUPG72x2wst7lwtc/W7hjXUZSlQRuLKMsPJfgfegt4t6GUEGCsxRiLUhJhQSp5uCx+e9uq1Ob2PrTkzsMQ/xdEAQLK0qCkeGMvRApxe4vyo3O7Dh81bgdJCIHjHM4xrIDSHI63D4fbAsdx3gi4tndiLN66p+2ot2S2+Qge0vyRfjDrzcETd/GzO59Z+9E/Frt6NrQSUAmoqARUAioqAZWAikpAJaCiElAJqKgEVAIqKgGVgIpKQCWgohJQCaioBFQCKioBlYCKSkAloKISUAmoqARUAioqAZWAikpAJaCiElAJqPg1+F+6mx7RLGOGPgAAAABJRU5ErkJggg==">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,500;1,6..72,300&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --night:#071526; --petrol:#102A42; --slate:#1B3B57;
+    --cyan:#49D7D0; --teal:#3EB58E; --gold:#C99232;
+    --ice:#F5F7FA; --paper:#FFFFFF; --ink:#172536; --mist:#E3EBF1; --muted:#5B7185;
+    --danger:#C85B5B;
+    --display:"Bricolage Grotesque","Segoe UI",system-ui,sans-serif;
+    --body:"Newsreader",Georgia,"Times New Roman",serif;
+    --mono:"JetBrains Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
+    --gutter:clamp(20px,5vw,64px);
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{margin:0;background:var(--ice);color:var(--ink);
+    font-family:var(--body);font-size:clamp(17px,1.05vw,18.5px);line-height:1.62}
+  a{color:var(--petrol)}
+  :focus-visible{outline:3px solid var(--cyan);outline-offset:3px;border-radius:4px}
+
+  /* ---------- topo ---------- */
+  .top{background:var(--night);color:#DCE7F0;padding:clamp(26px,5vw,52px) var(--gutter) clamp(34px,6vw,60px)}
+  .top-in{max-width:1080px;margin:0 auto}
+  .brand{display:flex;align-items:center;gap:11px;font-family:var(--display);font-weight:800;
+    letter-spacing:.14em;font-size:14px;color:#fff;text-transform:uppercase}
+  .brand .dot{width:11px;height:11px;border-radius:50%;background:var(--cyan);
+    box-shadow:0 0 0 4px rgba(73,215,208,.18)}
+  .kicker{font-family:var(--mono);font-weight:500;font-size:12px;letter-spacing:.16em;
+    text-transform:uppercase;color:var(--cyan);margin:clamp(26px,4vw,40px) 0 12px}
+  h1{font-family:var(--display);font-weight:800;color:#fff;margin:0;
+    font-size:clamp(30px,5.4vw,54px);line-height:1.04;letter-spacing:-.02em;max-width:20ch}
+  .standfirst{font-style:italic;font-size:clamp(17px,2vw,22px);line-height:1.5;color:#BFD3E2;
+    max-width:48ch;margin:16px 0 0}
+  .facts{list-style:none;display:flex;flex-wrap:wrap;gap:8px;padding:0;margin:22px 0 0}
+  .facts li{font-family:var(--mono);font-weight:500;font-size:12px;letter-spacing:.03em;
+    padding:7px 13px;border:1px solid rgba(73,215,208,.55);border-radius:999px;color:#E2F2F1;
+    background:rgba(73,215,208,.07)}
+  .top-cta{display:inline-flex;align-items:center;gap:10px;margin-top:clamp(22px,4vw,32px);
+    font-family:var(--display);font-weight:600;font-size:15px;text-decoration:none;
+    color:var(--night);background:var(--cyan);padding:13px 20px;border-radius:11px}
+  .top-cta:hover{background:#67E5DE}
+  .lang{margin-top:26px;display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+  .lang span{font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;
+    color:#A3B8C9}
+  .lang button{display:inline-flex;align-items:center;gap:7px;
+    font-family:var(--mono);font-size:11.5px;letter-spacing:.06em;cursor:pointer;
+    background:transparent;color:#D5E3EC;border:1px solid rgba(191,211,226,.42);
+    border-radius:999px;padding:5px 12px 5px 9px}
+  .lang button:hover{border-color:rgba(73,215,208,.75)}
+  .lang .flag{display:block;border-radius:2px;
+    box-shadow:0 0 0 1px rgba(255,255,255,.28);flex:0 0 auto}
+  .lang button[aria-pressed="true"]{background:var(--cyan);color:var(--night);border-color:var(--cyan)}
+
+  /* ---------- corpo ---------- */
+  .wrap{max-width:1080px;margin:0 auto;padding:clamp(34px,6vw,64px) var(--gutter) 0}
+  .lede{font-size:clamp(18px,2vw,21px);line-height:1.55;margin:0 0 8px;max-width:62ch}
+  h2{font-family:var(--display);font-weight:800;font-size:clamp(22px,3vw,31px);
+    line-height:1.12;letter-spacing:-.015em;margin:clamp(44px,6vw,64px) 0 10px;
+    padding-top:clamp(18px,3vw,26px);border-top:1px solid var(--mist)}
+  h2:first-of-type{border-top:0;padding-top:0;margin-top:clamp(30px,5vw,42px)}
+  .sub{color:var(--muted);font-size:16.5px;margin:0 0 22px;max-width:56ch}
+  p{margin:0 0 16px;max-width:68ch}
+
+  /* passo a passo do app */
+  .steps{list-style:none;padding:0;margin:0 0 10px;counter-reset:s}
+  .steps li{position:relative;padding:14px 0 14px 52px;border-bottom:1px solid var(--mist);
+    counter-increment:s}
+  .steps li:last-child{border-bottom:0}
+  .steps li::before{content:counter(s);position:absolute;left:0;top:13px;
+    font-family:var(--mono);font-weight:700;font-size:12px;color:var(--night);
+    width:30px;height:30px;border-radius:9px;background:var(--cyan);
+    display:flex;align-items:center;justify-content:center}
+  .steps strong{font-family:var(--display);font-weight:600}
+
+  /* ---------- balanço: assinatura da página ---------- */
+  .ledger{background:var(--paper);border:1px solid var(--mist);border-radius:16px;
+    overflow:hidden;margin:6px 0 8px}
+  .ledger-head{display:grid;grid-template-columns:1fr auto;align-items:center;
+    gap:12px;padding:16px 20px;background:var(--night);color:#EAF3F8}
+  .ledger-head h3{font-family:var(--display);font-weight:600;font-size:16px;margin:0;color:#fff}
+  .ledger-head .mom{font-family:var(--mono);font-size:11px;letter-spacing:.1em;
+    text-transform:uppercase;color:var(--cyan)}
+  .rows{margin:0;padding:0;list-style:none}
+  .rows li{display:grid;grid-template-columns:minmax(0,1fr) 148px;gap:14px;
+    padding:14px 20px;border-bottom:1px solid var(--mist);align-items:center}
+  .rows li:last-child{border-bottom:0}
+  .rows .what{min-width:0}
+  .rows .what b{font-family:var(--display);font-weight:600;font-size:15.5px;display:block;
+    letter-spacing:-.005em}
+  .rows .what small{display:block;color:var(--muted);font-size:14px;line-height:1.45;margin-top:3px}
+  .tag{font-family:var(--mono);font-size:10.5px;letter-spacing:.05em;text-transform:uppercase;
+    padding:6px 8px;border-radius:6px;white-space:nowrap;font-weight:700;
+    width:100%;text-align:center}
+  .tag.del{background:rgba(200,91,91,.12);color:#8E3535;border:1px solid rgba(200,91,91,.35)}
+  .tag.anon{background:rgba(201,146,50,.14);color:#7A5716;border:1px solid rgba(201,146,50,.38)}
+  .tag.keep{background:rgba(62,181,142,.13);color:#1F6B52;border:1px solid rgba(62,181,142,.35)}
+  .ledger-foot{padding:14px 20px;background:#FBFDFE;border-top:1px solid var(--mist);
+    font-size:14.5px;color:var(--muted);margin:0;max-width:none}
+
+  /* ---------- formulário ---------- */
+  .card{background:var(--paper);border:1px solid var(--mist);border-radius:16px;
+    padding:clamp(20px,3.4vw,30px)}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}
+  .field{display:flex;flex-direction:column;gap:6px}
+  label{font-family:var(--mono);font-size:11px;letter-spacing:.09em;text-transform:uppercase;
+    color:var(--slate)}
+  input,textarea{font-family:var(--body);font-size:17px;color:var(--ink);
+    background:#FBFDFE;border:1px solid #CBD8E2;border-radius:9px;padding:11px 13px;width:100%}
+  input:focus,textarea:focus{border-color:var(--cyan);background:#fff}
+  textarea{resize:vertical;min-height:84px}
+  .check{display:flex;gap:11px;align-items:flex-start;margin:18px 0 6px;
+    font-size:15.5px;color:var(--slate)}
+  .check input{width:20px;height:20px;flex:0 0 auto;margin-top:2px;accent-color:#0F8F86}
+  .send{margin-top:18px;display:inline-flex;align-items:center;gap:10px;border:0;cursor:pointer;
+    font-family:var(--display);font-weight:600;font-size:16px;color:var(--night);
+    background:var(--cyan);padding:14px 24px;border-radius:11px}
+  .send:hover{background:#67E5DE}
+  .status{margin:14px 0 0;font-size:15px;color:var(--slate)}
+  .status.err{color:#8E3535}
+  .fallback{margin:18px 0 0;padding:14px 16px;background:#F4F9FA;border-left:3px solid var(--cyan);
+    border-radius:0 9px 9px 0;font-size:15px;color:var(--slate)}
+  .fallback code{font-family:var(--mono);font-size:13.5px;background:#fff;padding:2px 6px;
+    border-radius:5px;border:1px solid var(--mist)}
+  .note{font-size:15px;color:var(--muted);margin-top:14px;max-width:60ch}
+
+  /* ---------- rodapé ---------- */
+  footer{background:var(--night);color:#BFD3E2;margin-top:clamp(48px,7vw,84px);
+    padding:clamp(30px,5vw,48px) var(--gutter)}
+  .foot-in{max-width:1080px;margin:0 auto;display:grid;gap:22px;
+    grid-template-columns:repeat(auto-fit,minmax(230px,1fr))}
+  footer h4{font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;
+    color:var(--cyan);margin:0 0 10px;font-weight:500}
+  footer p{color:#A9C1D4;font-size:15px;margin:0 0 12px;max-width:38ch}
+  footer a{color:#DCE7F0;text-decoration:underline;text-underline-offset:2px}
+  .legal{max-width:1080px;margin:26px auto 0;padding-top:18px;border-top:1px solid rgba(255,255,255,.14);
+    font-family:var(--mono);font-size:11.5px;color:#7E97AC;letter-spacing:.02em}
+
+  [hidden]{display:none !important}
+  @media (max-width:520px){
+    .rows li{grid-template-columns:1fr;gap:6px}
+    .tag{justify-self:start}
+  }
+  @media (prefers-reduced-motion:reduce){*{animation:none !important;transition:none !important}}
+  @media print{
+    .top{background:#fff;color:#000}.brand,.kicker{color:#000}h1{color:#000}
+    .standfirst{color:#333}.lang,.top-cta,.send,footer{display:none}
+    body{background:#fff}
+  }
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="top-in">
+    <div class="brand"><span class="dot"></span>Bimboca</div>
+    <p class="kicker" data-k="kicker">Conta e dados</p>
+    <h1 data-k="h1">Excluir sua conta e seus dados</h1>
+    <p class="standfirst" data-k="standfirst">Dois toques dentro do aplicativo, ou um pedido por esta página se você já desinstalou. Sem cadastro, sem senha, sem custo.</p>
+    <ul class="facts">
+      <li data-k="fact1">Exclusão imediata pelo app</li>
+      <li data-k="fact2">Pedido web respondido em até 15 dias</li>
+      <li data-k="fact3">LGPD, art. 18</li>
+    </ul>
+    <a class="top-cta" href="#pedido">
+      <span data-k="cta">Fazer o pedido pela web</span> <span aria-hidden="true">&rarr;</span>
+    </a>
+    <div class="lang" role="group" aria-label="Idioma / Language / Idioma">
+      <span data-k="lbl">Idioma</span>
+      <button type="button" data-lang-btn="pt-BR" aria-pressed="true"><img class="flag" src="data:image/png;base64,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" width="21" height="14" alt="" decoding="async">Português</button>
+      <button type="button" data-lang-btn="en-US" aria-pressed="false"><img class="flag" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAbCAYAAAAOEM1uAAADuUlEQVR42s2Wy24dRRCGv+rpuZ0ztmMHJSR2AgmyuKyQEmXBmh1ILFjBC/Ac8CggkGCBiOABIiQILBAbFHERRCZSuIQ4Dj7nzMyZ6SoWM57YROwG6bRU6pquGvXff1265Z2337UH+39zf/+Qzc2CySTj3r2HqML6eo4CVVXT1C3r6zmTScpffzygcjHnL5xl69uvya5/yBYPyFinIRAAxzjDhxAIZlgvIYReV0IIAFg4snViQGga2qomv7jD9muvcMYpyTQnqBIMnIwEsA1KCIqqEQb9kQC9bsOaidDWNctFSfHsM+y++hLbZzaIvMd6fzcSQu9EEAR6EelnHCKCMZgQ6ewCOOeQyKFNS/PwkMYbmnjMQNXGAzhsehyAyAAIeMyOgvOeKIlZ/HqHO1/dZhkrSTFBQ6A1GTEHVVHTIe9UtZvNhhCbGqZd6AZ/BAyWB4fMfr5NbjVpMaUNI+fgwAonGRTR/1gXnHNY06Jty/TpHbYvn+ZckRJnKWpGMBsPYOQEN2zuutzq9X+H2DkhcoKLHGgADRSXLnHhyi4750/jfdQXyYg5eLxqH6vi0FdxvxaOfNoAkQfvOfjue3788gYPUyGd5LRjt5mT1cuJkHK0dlwHzAznPc57Fnt3+e3mDZpmTrZW0Bzl4FhFkqYxSS9pL0kSo2qkadyFDEOWkKZJ5zNJacuGGOPMtRd54eWrPHkqJ85izKQLsYwU4nJRUc5KFrOS1EdggfmsxNSIpLs1ympJs2zxIogZ5bxiPitZTFN46jTF7kU2zm3iYw9I16hHA1jWlGVNtaip0hgRqMoaVcNHDgOqaknTNMQ+QpxQzivqJlAH5f6tn/jlm5uUeUSSZ6hBsBEBbp3dIsoSfJ6xsTElyxJIEsyM6SQHjLpuaNpAUWRkWYrznqk5nji3SfL7HrNbP7Afqq4PatdDR8vBK9eeZ7GomS9qJpMU7x3zeQ1mpGkCGE0b0KCkaUKcRMwPS1qJWDs1pbi7Rp4HJssFcZ4RTNERbxI5ODg01e614vorzgxMQdxQthgyFLMpGCCRwy0rXFnigoJz3c8jDr/45FOcc0SR0Gp35TkX9a8YG7oMIpgqYLgoQlRpg2FpAkWBSYSpnmhXozD42eWrPQo6Wo7pj7gwhO5lI4O9/xJQcd0hxiWvY3D7jde7h0IPooNzHCknkMsxu4hDVLEQEKwL/8gApTmc/Q/nHpHB2+99xEoD3Pvg49UGuP7c7koDlD8/v7naORhvbqw2g1+8+dZKMyjvs7nSAP8B2qwo8xbLKDoAAAAASUVORK5CYII=" width="21" height="14" alt="" decoding="async">English</button>
+      <button type="button" data-lang-btn="es-ES" aria-pressed="false"><img class="flag" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAbCAYAAAAOEM1uAAAAhklEQVR42u2WPQ5AUBCEd9lQENGoJA7jsAqJC7iKUkXPk/h5DqH5Im9O8CUzs7PaV7UXsExU0IpEAuA3i++D7bEpPINWtzsaUNchZp+ZvLnZFp8bPIPi6YAPHRB+qsPU/X+L8S32dMCkhAO6hR1Dm7qCDTiPGRvwcvCPOkrZNTYNW/zzJXkBNfEZWXarZ8MAAAAASUVORK5CYII=" width="21" height="14" alt="" decoding="async">Español</button>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <!-- ============ PORTUGUÊS ============ -->
+  <div data-lang="pt-BR">
+    <p class="lede">O Bimboca funciona sem conta no plano Free. Se você entrou com o Google, existe uma conta ligada ao seu e-mail — e ela pode ser apagada por você, quando quiser, sem pedir autorização a ninguém.</p>
+
+    <h2>Caminho mais rápido: dentro do aplicativo</h2>
+    <p class="sub">A exclusão acontece na hora, no próprio aparelho. É o caminho que a Google Play exige de todo aplicativo com conta.</p>
+    <ol class="steps">
+      <li><strong>Abra o Bimboca</strong> e vá até a aba <strong>Conta</strong>.</li>
+      <li>Procure a seção <strong>Controle da conta e dados</strong> e toque em <strong>Excluir minha conta</strong>.</li>
+      <li>O botão pede confirmação: toque uma segunda vez. O aplicativo apaga os dados no servidor e só então limpa o aparelho.</li>
+    </ol>
+    <p class="note">Se não houver conexão, nada é apagado — o aplicativo avisa e mantém tudo como estava. Isso é proposital: a exclusão nunca fica pela metade.</p>
+
+    <h2>O que acontece com cada dado</h2>
+    <p class="sub">Esta é a parte que costuma ficar escondida atrás de "seus dados serão excluídos". Aqui está item por item.</p>
+
+    <div class="ledger">
+      <div class="ledger-head">
+        <h3>Balanço da exclusão</h3>
+        <span class="mom">conta do entregador</span>
+      </div>
+      <ul class="rows">
+        <li>
+          <div class="what"><b>Nome, e-mail e identificador da conta Google</b>
+            <small>O vínculo com a sua conta do Google e o perfil guardado no aparelho.</small></div>
+          <span class="tag del">Apagado</span>
+        </li>
+        <li>
+          <div class="what"><b>Consumo do mês</b>
+            <small>Leituras de etiqueta por I.A. e rotas do Google já usadas. Depois da exclusão, o contador volta a zero.</small></div>
+          <span class="tag del">Apagado</span>
+        </li>
+        <li>
+          <div class="what"><b>Pontos reivindicados e cota diária</b>
+            <small>O registro de quantos pontos você pegou em cada dia no plano Free.</small></div>
+          <span class="tag del">Apagado</span>
+        </li>
+        <li>
+          <div class="what"><b>Assinatura registrada no Bimboca</b>
+            <small>O comprovante que o aplicativo guarda depois de validar sua compra.</small></div>
+          <span class="tag del">Apagado</span>
+        </li>
+        <li>
+          <div class="what"><b>Código de indicação, cupons e indicações</b>
+            <small>Seu código, os cupons acumulados e o histórico de quem indicou quem.</small></div>
+          <span class="tag del">Apagado</span>
+        </li>
+        <li>
+          <div class="what"><b>Links de rastreio que você criou</b>
+            <small>As páginas de acompanhamento enviadas ao cliente deixam de existir.</small></div>
+          <span class="tag del">Apagado</span>
+        </li>
+        <li>
+          <div class="what"><b>Paradas, fotos de etiqueta e histórico no aparelho</b>
+            <small>Ficam só no celular. São apagados na mesma ação, quando você exclui pelo aplicativo.</small></div>
+          <span class="tag del">Apagado</span>
+        </li>
+        <li>
+          <div class="what"><b>Seu vínculo com rotas de uma empresa</b>
+            <small>A empresa continua dona da rota e do histórico de entregas dela. Do seu lado saem o identificador, o nome, o e-mail, a última posição e a trilha do trajeto.</small></div>
+          <span class="tag anon">Anonimizado</span>
+        </li>
+        <li>
+          <div class="what"><b>A rota em si, na conta da empresa</b>
+            <small>Pertence a quem contratou a entrega. Apagá-la destruiria o registro de outra pessoa — por isso ela permanece, sem nada que identifique você.</small></div>
+          <span class="tag keep">Permanece</span>
+        </li>
+        <li>
+          <div class="what"><b>A assinatura na Google Play</b>
+            <small>Cobrança de terceiro. Excluir a conta no Bimboca não cancela a assinatura — cancele em play.google.com &rarr; Assinaturas.</small></div>
+          <span class="tag keep">Cancelar na Play</span>
+        </li>
+      </ul>
+      <p class="ledger-foot">Se você entrou apenas com o plano Free e nunca fez login com o Google, não existe conta no servidor: só há dados no aparelho, apagados ao desinstalar o aplicativo.</p>
+    </div>
+
+    <h2 id="pedido">Pedido pela web — se você já desinstalou</h2>
+    <p class="sub">Preencha os campos abaixo. O pedido é enviado por e-mail ao desenvolvedor, que confirma o recebimento e executa a exclusão.</p>
+    <div class="card">
+      <form id="form-pedido" novalidate>
+        <div class="grid">
+          <div class="field">
+            <label for="nome">Seu nome</label>
+            <input id="nome" name="nome" type="text" autocomplete="name" required>
+          </div>
+          <div class="field">
+            <label for="email">E-mail da conta Google usada no app</label>
+            <input id="email" name="email" type="email" autocomplete="email" required
+                   placeholder="nome@gmail.com">
+          </div>
+        </div>
+        <div class="field" style="margin-top:14px">
+          <label for="obs">Algo que precise ser considerado? (opcional)</label>
+          <textarea id="obs" name="obs" placeholder="Ex.: excluí o aplicativo em 20/10 e não lembro se ainda havia rota em andamento."></textarea>
+        </div>
+        <label class="check" for="ciente">
+          <input id="ciente" name="ciente" type="checkbox" required>
+          <span>Entendo que a exclusão é definitiva: não é possível recuperar o histórico, os cupons nem o consumo depois de concluída.</span>
+        </label>
+        <button class="send" type="submit">Enviar pedido de exclusão</button>
+        <p class="status" id="status" role="status" aria-live="polite"></p>
+        <div class="fallback">
+          Se o botão não abrir seu aplicativo de e-mail, escreva direto para
+          <code id="mail-fallback">—</code> com o e-mail da sua conta Google e o pedido de exclusão.
+        </div>
+      </form>
+    </div>
+
+    <h2>Depois do pedido</h2>
+    <p>Confirmamos o recebimento em até 2 dias úteis e concluímos a exclusão em até 15 dias, contados do pedido. Você recebe uma resposta no mesmo endereço de onde escreveu.</p>
+    <p>Se o pedido vier de um endereço diferente do e-mail da conta Google, podemos pedir uma confirmação simples de titularidade antes de apagar — para que ninguém exclua a conta de outra pessoa.</p>
+    <p>Enquanto a exclusão não é concluída, você continua podendo entrar no aplicativo normalmente. Depois dela, o aplicativo volta ao estado de primeiro uso, no plano Free, e um novo login cria uma conta nova, sem histórico.</p>
+  </div>
+
+  <!-- ============ ENGLISH ============ -->
+  <div data-lang="en-US" hidden>
+    <p class="lede">Bimboca works without an account on the Free plan. If you signed in with Google, there is an account tied to your e-mail address — and you can delete it yourself, whenever you want, without asking anyone for permission.</p>
+
+    <h2>Fastest route: inside the app</h2>
+    <p class="sub">Deletion happens immediately, on the device. This is the route Google Play requires from every app that offers accounts.</p>
+    <ol class="steps">
+      <li><strong>Open Bimboca</strong> and go to the <strong>Account</strong> tab.</li>
+      <li>Find the <strong>Account and data control</strong> section and tap <strong>Delete my account</strong>.</li>
+      <li>The button asks for confirmation: tap a second time. The app deletes the server data and only then clears the device.</li>
+    </ol>
+    <p class="note">With no connection, nothing is deleted — the app tells you so and keeps everything as it was. That is intentional: deletion never happens halfway.</p>
+
+    <h2>What happens to each piece of data</h2>
+    <p class="sub">This is the part usually hidden behind "your data will be deleted". Here it is item by item.</p>
+
+    <div class="ledger">
+      <div class="ledger-head">
+        <h3>Deletion balance</h3>
+        <span class="mom">courier account</span>
+      </div>
+      <ul class="rows">
+        <li><div class="what"><b>Name, e-mail and Google account identifier</b>
+          <small>The link to your Google account and the profile stored on the device.</small></div>
+          <span class="tag del">Deleted</span></li>
+        <li><div class="what"><b>Monthly usage</b>
+          <small>AI label readings and Google routes already used. After deletion the counter returns to zero.</small></div>
+          <span class="tag del">Deleted</span></li>
+        <li><div class="what"><b>Claimed stops and daily quota</b>
+          <small>The record of how many stops you took on each day under the Free plan.</small></div>
+          <span class="tag del">Deleted</span></li>
+        <li><div class="what"><b>Subscription record inside Bimboca</b>
+          <small>The receipt the app keeps after validating your purchase.</small></div>
+          <span class="tag del">Deleted</span></li>
+        <li><div class="what"><b>Referral code, coupons and referrals</b>
+          <small>Your code, the coupons you earned and the history of who referred whom.</small></div>
+          <span class="tag del">Deleted</span></li>
+        <li><div class="what"><b>Tracking links you created</b>
+          <small>The follow-up pages sent to your customer stop existing.</small></div>
+          <span class="tag del">Deleted</span></li>
+        <li><div class="what"><b>Stops, label photos and history on the device</b>
+          <small>These live only on the phone. They are erased in the same action when you delete from inside the app.</small></div>
+          <span class="tag del">Deleted</span></li>
+        <li><div class="what"><b>Your link to a company's routes</b>
+          <small>The company still owns the route and its delivery history. On your side, the identifier, name, e-mail, last position and route trace are removed.</small></div>
+          <span class="tag anon">Anonymised</span></li>
+        <li><div class="what"><b>The route itself, on the company's account</b>
+          <small>It belongs to whoever hired the delivery. Deleting it would destroy someone else's record — so it stays, with nothing that identifies you.</small></div>
+          <span class="tag keep">Remains</span></li>
+        <li><div class="what"><b>The Google Play subscription</b>
+          <small>A third-party charge. Deleting your Bimboca account does not cancel it — cancel at play.google.com &rarr; Subscriptions.</small></div>
+          <span class="tag keep">Cancel in Play</span></li>
+      </ul>
+      <p class="ledger-foot">If you only used the Free plan and never signed in with Google, there is no account on the server: the only data is on the device, erased when you uninstall the app.</p>
+    </div>
+
+    <h2 id="pedido">Web request — if you already uninstalled</h2>
+    <p class="sub">Fill in the fields below. The request is sent by e-mail to the developer, who confirms receipt and performs the deletion.</p>
+    <div class="card">
+      <form id="form-pedido-en" novalidate>
+        <div class="grid">
+          <div class="field">
+            <label for="nome-en">Your name</label>
+            <input id="nome-en" name="nome" type="text" autocomplete="name" required>
+          </div>
+          <div class="field">
+            <label for="email-en">Google account e-mail used in the app</label>
+            <input id="email-en" name="email" type="email" autocomplete="email" required
+                   placeholder="name@gmail.com">
+          </div>
+        </div>
+        <div class="field" style="margin-top:14px">
+          <label for="obs-en">Anything we should know? (optional)</label>
+          <textarea id="obs-en" name="obs" placeholder="E.g.: I uninstalled the app on 20 Oct and I am not sure whether a route was still open."></textarea>
+        </div>
+        <label class="check" for="ciente-en">
+          <input id="ciente-en" name="ciente" type="checkbox" required>
+          <span>I understand deletion is permanent: history, coupons and usage cannot be recovered once it is complete.</span>
+        </label>
+        <button class="send" type="submit">Send deletion request</button>
+        <p class="status" id="status-en" role="status" aria-live="polite"></p>
+        <div class="fallback">
+          If the button does not open your e-mail app, write directly to
+          <code class="mail-fallback">—</code> with your Google account e-mail and the deletion request.
+        </div>
+      </form>
+    </div>
+
+    <h2>After the request</h2>
+    <p>We confirm receipt within 2 business days and complete the deletion within 15 days of the request. You get a reply at the address you wrote from.</p>
+    <p>If the request comes from an address other than the account's Google e-mail, we may ask for a simple ownership confirmation before deleting — so that nobody deletes someone else's account.</p>
+    <p>Until the deletion is complete you can still sign in normally. After it, the app returns to its first-use state on the Free plan, and a new sign-in creates a new account with no history.</p>
+  </div>
+
+  <!-- ============ ESPAÑOL ============ -->
+  <div data-lang="es-ES" hidden>
+    <p class="lede">Bimboca funciona sin cuenta en el plan Free. Si entraste con Google, existe una cuenta vinculada a tu correo — y puedes eliminarla tú mismo, cuando quieras, sin pedir autorización a nadie.</p>
+
+    <h2>Camino más rápido: dentro de la aplicación</h2>
+    <p class="sub">La eliminación ocurre en el acto, en el propio dispositivo. Es el camino que Google Play exige a toda aplicación con cuenta.</p>
+    <ol class="steps">
+      <li><strong>Abre Bimboca</strong> y ve a la pestaña <strong>Cuenta</strong>.</li>
+      <li>Busca la sección <strong>Control de la cuenta y los datos</strong> y toca <strong>Eliminar mi cuenta</strong>.</li>
+      <li>El botón pide confirmación: toca una segunda vez. La aplicación borra los datos del servidor y solo después limpia el dispositivo.</li>
+    </ol>
+    <p class="note">Sin conexión no se borra nada — la aplicación lo avisa y mantiene todo como estaba. Es intencional: la eliminación nunca queda a medias.</p>
+
+    <h2>Qué pasa con cada dato</h2>
+    <p class="sub">Esta es la parte que suele quedar escondida detrás de "tus datos serán eliminados". Aquí está punto por punto.</p>
+
+    <div class="ledger">
+      <div class="ledger-head">
+        <h3>Balance de la eliminación</h3>
+        <span class="mom">cuenta del repartidor</span>
+      </div>
+      <ul class="rows">
+        <li><div class="what"><b>Nombre, correo e identificador de la cuenta Google</b>
+          <small>El vínculo con tu cuenta de Google y el perfil guardado en el dispositivo.</small></div>
+          <span class="tag del">Eliminado</span></li>
+        <li><div class="what"><b>Consumo del mes</b>
+          <small>Lecturas de etiqueta por I.A. y rutas de Google ya usadas. Tras la eliminación el contador vuelve a cero.</small></div>
+          <span class="tag del">Eliminado</span></li>
+        <li><div class="what"><b>Puntos reclamados y cuota diaria</b>
+          <small>El registro de cuántos puntos tomaste cada día en el plan Free.</small></div>
+          <span class="tag del">Eliminado</span></li>
+        <li><div class="what"><b>Suscripción registrada en Bimboca</b>
+          <small>El comprobante que la aplicación guarda tras validar tu compra.</small></div>
+          <span class="tag del">Eliminado</span></li>
+        <li><div class="what"><b>Código de referidos, cupones y referidos</b>
+          <small>Tu código, los cupones acumulados y el historial de quién recomendó a quién.</small></div>
+          <span class="tag del">Eliminado</span></li>
+        <li><div class="what"><b>Enlaces de seguimiento que creaste</b>
+          <small>Las páginas de seguimiento enviadas al cliente dejan de existir.</small></div>
+          <span class="tag del">Eliminado</span></li>
+        <li><div class="what"><b>Paradas, fotos de etiqueta e historial en el dispositivo</b>
+          <small>Están solo en el teléfono. Se borran en la misma acción cuando eliminas desde la aplicación.</small></div>
+          <span class="tag del">Eliminado</span></li>
+        <li><div class="what"><b>Tu vínculo con rutas de una empresa</b>
+          <small>La empresa sigue siendo dueña de la ruta y de su historial de entregas. De tu lado salen el identificador, el nombre, el correo, la última posición y la traza del recorrido.</small></div>
+          <span class="tag anon">Anonimizado</span></li>
+        <li><div class="what"><b>La ruta en sí, en la cuenta de la empresa</b>
+          <small>Pertenece a quien contrató la entrega. Borrarla destruiría el registro de otra persona — por eso permanece, sin nada que te identifique.</small></div>
+          <span class="tag keep">Permanece</span></li>
+        <li><div class="what"><b>La suscripción en Google Play</b>
+          <small>Cobro de un tercero. Eliminar la cuenta de Bimboca no cancela la suscripción — cancélala en play.google.com &rarr; Suscripciones.</small></div>
+          <span class="tag keep">Cancelar en Play</span></li>
+      </ul>
+      <p class="ledger-foot">Si solo usaste el plan Free y nunca iniciaste sesión con Google, no existe cuenta en el servidor: los únicos datos están en el dispositivo y se borran al desinstalar la aplicación.</p>
+    </div>
+
+    <h2 id="pedido">Solicitud web — si ya desinstalaste</h2>
+    <p class="sub">Completa los campos. La solicitud se envía por correo al desarrollador, que confirma la recepción y realiza la eliminación.</p>
+    <div class="card">
+      <form id="form-pedido-es" novalidate>
+        <div class="grid">
+          <div class="field">
+            <label for="nome-es">Tu nombre</label>
+            <input id="nome-es" name="nome" type="text" autocomplete="name" required>
+          </div>
+          <div class="field">
+            <label for="email-es">Correo de la cuenta Google usada en la app</label>
+            <input id="email-es" name="email" type="email" autocomplete="email" required
+                   placeholder="nombre@gmail.com">
+          </div>
+        </div>
+        <div class="field" style="margin-top:14px">
+          <label for="obs-es">¿Algo que debamos considerar? (opcional)</label>
+          <textarea id="obs-es" name="obs" placeholder="Ej.: desinstalé la aplicación el 20/10 y no sé si quedaba una ruta abierta."></textarea>
+        </div>
+        <label class="check" for="ciente-es">
+          <input id="ciente-es" name="ciente" type="checkbox" required>
+          <span>Entiendo que la eliminación es definitiva: no es posible recuperar el historial, los cupones ni el consumo una vez concluida.</span>
+        </label>
+        <button class="send" type="submit">Enviar solicitud de eliminación</button>
+        <p class="status" id="status-es" role="status" aria-live="polite"></p>
+        <div class="fallback">
+          Si el botón no abre tu aplicación de correo, escribe directamente a
+          <code class="mail-fallback">—</code> con el correo de tu cuenta Google y la solicitud de eliminación.
+        </div>
+      </form>
+    </div>
+
+    <h2>Después de la solicitud</h2>
+    <p>Confirmamos la recepción en un plazo de 2 días hábiles y concluimos la eliminación en un plazo de 15 días desde la solicitud. Recibes la respuesta en la misma dirección desde la que escribiste.</p>
+    <p>Si la solicitud llega desde una dirección distinta del correo de la cuenta Google, podemos pedir una confirmación simple de titularidad antes de borrar — para que nadie elimine la cuenta de otra persona.</p>
+    <p>Mientras la eliminación no esté concluida puedes seguir entrando normalmente. Después, la aplicación vuelve al estado de primer uso en el plan Free, y un nuevo inicio de sesión crea una cuenta nueva, sin historial.</p>
+  </div>
+
+</main>
+
+<footer>
+  <div class="foot-in">
+    <div>
+      <h4 data-k="f1">Bimboca</h4>
+      <p data-k="f1p">Roteirização de entregas para entregadores autônomos e empresas de entrega. Brasil.</p>
+    </div>
+    <div>
+      <h4 data-k="f2">Documentos</h4>
+      <p><a href="/" data-k="f2a">Política de Privacidade</a><br>
+         <a href="https://play.google.com/store/account/subscriptions" rel="noopener" data-k="f2b">Assinaturas na Google Play</a></p>
+    </div>
+    <div>
+      <h4 data-k="f3">Contato</h4>
+      <p><a id="mail-footer" href="#">—</a></p>
+    </div>
+  </div>
+  <p class="legal" data-k="legal">Última atualização: 25 de outubro de 2026. Página exigida pela Política de Dados do Usuário do Google Play e pela LGPD (Lei 13.709/2018).</p>
+</footer>
+
+<script>
+(function () {
+  "use strict";
+
+  /* ------------------------------------------------------------------ *
+   * Endereço que recebe os pedidos. Trocar AQUI muda a página inteira. *
+   * ------------------------------------------------------------------ */
+  var PEDIDO_EMAIL = "satisfaisys@gmail.com";
+
+  var TEXTOS = {
+    "pt-BR": {
+      titulo: "Excluir conta e dados — Bimboca",
+      assunto: "Pedido de exclusão de conta Bimboca",
+      rotulo: "Português",
+      campos: {
+        nome: "Nome: ",
+        email: "E-mail da conta Google: ",
+        obs: "Observação: ",
+        ciente: "Declaro estar ciente de que a exclusão é definitiva."
+      },
+      pronto: "Pedido pronto no seu aplicativo de e-mail. Se nada abriu, copie o endereço abaixo e envie por lá.",
+      faltando: "Preencha nome, e-mail da conta Google e marque a confirmação.",
+      invalido: "Confira o e-mail: parece incompleto.",
+      k: {
+        kicker: "Conta e dados",
+        h1: "Excluir sua conta e seus dados",
+        standfirst: "Dois toques dentro do aplicativo, ou um pedido por esta página se você já desinstalou. Sem cadastro, sem senha, sem custo.",
+        fact1: "Exclusão imediata pelo app",
+        fact2: "Pedido web respondido em até 15 dias",
+        fact3: "LGPD, art. 18",
+        cta: "Fazer o pedido pela web",
+        lbl: "Idioma",
+        f1: "Bimboca",
+        f1p: "Roteirização de entregas para entregadores autônomos e empresas de entrega. Brasil.",
+        f2: "Documentos",
+        f2a: "Política de Privacidade",
+        f2b: "Assinaturas na Google Play",
+        f3: "Contato",
+        legal: "Última atualização: 25 de outubro de 2026. Página exigida pela Política de Dados do Usuário do Google Play e pela LGPD (Lei 13.709/2018)."
+      }
+    },
+    "en-US": {
+      titulo: "Delete account and data — Bimboca",
+      assunto: "Bimboca account deletion request",
+      rotulo: "English",
+      campos: {
+        nome: "Name: ",
+        email: "Google account e-mail: ",
+        obs: "Note: ",
+        ciente: "I confirm that I understand deletion is permanent."
+      },
+      pronto: "Request prepared in your e-mail app. If nothing opened, copy the address below and send it from there.",
+      faltando: "Fill in your name, the Google account e-mail and tick the confirmation.",
+      invalido: "Check the e-mail address: it looks incomplete.",
+      k: {
+        kicker: "Account and data",
+        h1: "Delete your account and your data",
+        standfirst: "Two taps inside the app, or a request through this page if you already uninstalled. No sign-up, no password, no charge.",
+        fact1: "Immediate deletion in the app",
+        fact2: "Web requests answered within 15 days",
+        fact3: "LGPD, art. 18",
+        cta: "Send the web request",
+        lbl: "Language",
+        f1: "Bimboca",
+        f1p: "Delivery routing for independent couriers and delivery companies. Brazil.",
+        f2: "Documents",
+        f2a: "Privacy Policy",
+        f2b: "Subscriptions on Google Play",
+        f3: "Contact",
+        legal: "Last updated: 25 October 2026. Page required by Google Play's User Data Policy and by the LGPD (Law 13.709/2018)."
+      }
+    },
+    "es-ES": {
+      titulo: "Eliminar cuenta y datos — Bimboca",
+      assunto: "Solicitud de eliminación de cuenta Bimboca",
+      rotulo: "Español",
+      campos: {
+        nome: "Nombre: ",
+        email: "Correo de la cuenta Google: ",
+        obs: "Observación: ",
+        ciente: "Declaro estar al tanto de que la eliminación es definitiva."
+      },
+      pronto: "Solicitud preparada en tu aplicación de correo. Si no se abrió nada, copia la dirección de abajo y envíala desde allí.",
+      faltando: "Completa el nombre, el correo de la cuenta Google y marca la confirmación.",
+      invalido: "Revisa el correo: parece incompleto.",
+      k: {
+        kicker: "Cuenta y datos",
+        h1: "Eliminar tu cuenta y tus datos",
+        standfirst: "Dos toques dentro de la aplicación, o una solicitud por esta página si ya desinstalaste. Sin registro, sin contraseña, sin costo.",
+        fact1: "Eliminación inmediata desde la app",
+        fact2: "Solicitudes web respondidas en 15 días",
+        fact3: "LGPD, art. 18",
+        cta: "Enviar la solicitud web",
+        lbl: "Idioma",
+        f1: "Bimboca",
+        f1p: "Rutificación de entregas para repartidores independientes y empresas de entrega. Brasil.",
+        f2: "Documentos",
+        f2a: "Política de Privacidad",
+        f2b: "Suscripciones en Google Play",
+        f3: "Contacto",
+        legal: "Última actualización: 25 de octubre de 2026. Página exigida por la Política de Datos del Usuario de Google Play y por la LGPD (Ley 13.709/2018)."
+      }
+    }
+  };
+
+  var IDIOMAS = ["pt-BR", "en-US", "es-ES"];
+
+  function normalizar(tag) {
+    var t = (tag || "").toLowerCase();
+    if (t.indexOf("pt") === 0) return "pt-BR";
+    if (t.indexOf("es") === 0) return "es-ES";
+    if (t.indexOf("en") === 0) return "en-US";
+    return "pt-BR";
+  }
+
+  function aplicar(idioma) {
+    var t = TEXTOS[idioma] || TEXTOS["pt-BR"];
+    document.documentElement.lang = idioma;
+    document.title = t.titulo;
+
+    var blocos = document.querySelectorAll("[data-lang]");
+    for (var i = 0; i < blocos.length; i++) {
+      blocos[i].hidden = blocos[i].getAttribute("data-lang") !== idioma;
+    }
+
+    var rotulos = document.querySelectorAll("[data-k]");
+    for (var j = 0; j < rotulos.length; j++) {
+      var chave = rotulos[j].getAttribute("data-k");
+      if (t.k[chave]) rotulos[j].textContent = t.k[chave];
+    }
+
+    var botoes = document.querySelectorAll("[data-lang-btn]");
+    for (var b = 0; b < botoes.length; b++) {
+      botoes[b].setAttribute("aria-pressed", String(botoes[b].getAttribute("data-lang-btn") === idioma));
+    }
+
+    var codigos = document.querySelectorAll("#mail-fallback, .mail-fallback");
+    for (var c = 0; c < codigos.length; c++) codigos[c].textContent = PEDIDO_EMAIL;
+
+    var pe = document.getElementById("mail-footer");
+    if (pe) {
+      pe.textContent = PEDIDO_EMAIL;
+      pe.href = "mailto:" + PEDIDO_EMAIL;
+    }
+
+    try { localStorage.setItem("bimboca.excluir.idioma", idioma); } catch (e) {}
+  }
+
+  /* ---------------- formulário ---------------- */
+  function ligarFormulario() {
+    var formularios = document.querySelectorAll("form[id^='form-pedido']");
+    for (var f = 0; f < formularios.length; f++) {
+      (function (form) {
+        var bloco = form.closest("[data-lang]");
+        var idioma = bloco ? bloco.getAttribute("data-lang") : "pt-BR";
+        var t = TEXTOS[idioma] || TEXTOS["pt-BR"];
+        var status = form.querySelector(".status");
+
+        form.addEventListener("submit", function (evento) {
+          evento.preventDefault();
+          var nome = (form.querySelector("[name='nome']") || {}).value || "";
+          var email = (form.querySelector("[name='email']") || {}).value || "";
+          var obs = (form.querySelector("[name='obs']") || {}).value || "";
+          var ciente = form.querySelector("[name='ciente']");
+
+          status.className = "status";
+          if (!nome.trim() || !email.trim() || !ciente || !ciente.checked) {
+            status.textContent = t.faltando;
+            status.className = "status err";
+            return;
+          }
+          if (!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(email.trim())) {
+            status.textContent = t.invalido;
+            status.className = "status err";
+            return;
+          }
+
+          var corpo = [
+            t.campos.nome + nome.trim(),
+            t.campos.email + email.trim(),
+            obs.trim() ? t.campos.obs + obs.trim() : "",
+            "",
+            t.campos.ciente
+          ].filter(Boolean).join("\n");
+
+          window.location.href = "mailto:" + PEDIDO_EMAIL +
+            "?subject=" + encodeURIComponent(t.assunto) +
+            "&body=" + encodeURIComponent(corpo);
+
+          status.textContent = t.pronto;
+        });
+      })(formularios[f]);
+    }
+  }
+
+  /* ---------------- idioma inicial ---------------- */
+  var salvo = null;
+  try { salvo = localStorage.getItem("bimboca.excluir.idioma"); } catch (e) {}
+  var inicial = salvo && IDIOMAS.indexOf(salvo) >= 0
+    ? salvo
+    : normalizar(navigator.language || (navigator.languages && navigator.languages[0]));
+
+  aplicar(inicial);
+  ligarFormulario();
+
+  var botoes = document.querySelectorAll("[data-lang-btn]");
+  for (var i = 0; i < botoes.length; i++) {
+    botoes[i].addEventListener("click", function () {
+      aplicar(this.getAttribute("data-lang-btn"));
+    });
+  }
+})();
+</script>
+<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092" integrity="sha512-UKNk8GbxkABxKcXYuLkO16EleLGUkcvJWtpSNmExE0Too3ZaFAxTscNWEc1OdAv5/BikHawapSCaiD2XCmp+Bw==" data-cf-beacon='{"version":"2024.11.0","token":"4edd5f8ec12a48cfa682ab8261b80a79","spa":2}' crossorigin="anonymous"></script>
+</body>
+</html>
