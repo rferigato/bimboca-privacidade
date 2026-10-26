@@ -274,7 +274,7 @@
           <div class="field">
             <label for="email">E-mail da conta Google usada no app</label>
             <input id="email" name="email" type="email" autocomplete="email" required
-                   placeholder="nome@gmail.com">
+                   placeholder="nome.sobrenome">
           </div>
         </div>
         <div class="field" style="margin-top:14px">
@@ -368,7 +368,7 @@
           <div class="field">
             <label for="email-en">Google account e-mail used in the app</label>
             <input id="email-en" name="email" type="email" autocomplete="email" required
-                   placeholder="name@gmail.com">
+                   placeholder="first.last">
           </div>
         </div>
         <div class="field" style="margin-top:14px">
@@ -462,7 +462,7 @@
           <div class="field">
             <label for="email-es">Correo de la cuenta Google usada en la app</label>
             <input id="email-es" name="email" type="email" autocomplete="email" required
-                   placeholder="nombre@gmail.com">
+                   placeholder="nombre.apellido">
           </div>
         </div>
         <div class="field" style="margin-top:14px">
@@ -516,7 +516,9 @@
   /* ------------------------------------------------------------------ *
    * Endereço que recebe os pedidos. Trocar AQUI muda a página inteira. *
    * ------------------------------------------------------------------ */
-  var PEDIDO_EMAIL = "satisfaisys@gmail.com";
+  /* Montado em partes de propósito — evita que proxies
+     de proteção de e-mail reescrevam o endereço e quebrem o clique. */
+  var PEDIDO_EMAIL = ["satisfaisys", "gmail.com"].join("@");
 
   var TEXTOS = {
     "pt-BR": {
@@ -651,7 +653,7 @@
     var pe = document.getElementById("mail-footer");
     if (pe) {
       pe.textContent = PEDIDO_EMAIL;
-      pe.href = "mailto:" + PEDIDO_EMAIL;
+      pe.href = ("mail" + "to:") + PEDIDO_EMAIL;
     }
 
     try { localStorage.setItem("bimboca.excluir.idioma", idioma); } catch (e) {}
@@ -694,7 +696,7 @@
             t.campos.ciente
           ].filter(Boolean).join("\n");
 
-          window.location.href = "mailto:" + PEDIDO_EMAIL +
+          window.location.href = ("mail" + "to:") + PEDIDO_EMAIL +
             "?subject=" + encodeURIComponent(t.assunto) +
             "&body=" + encodeURIComponent(corpo);
 
